@@ -101,7 +101,7 @@
             </div>
         </nav>
         <!-- hero section -->
-        <div class="max-w-screen-xl mx-auto mt-32 bg-hero-bg rounded-f">
+        <div class="max-w-screen-xl mx-auto mt-32 bg-hero-bg rounded-[8px] relative">
             <div class="bg-black bg-opacity-60 h-[600px] w-auto rounded-[8px] flex justify-center">
                 <div class="mt-32">
                     <div class="text-white">
@@ -113,19 +113,323 @@
                     </div>
                 </div>
             </div>
+            <!-- fruit position section -->
+            <div class="flex justify-center invisible lg:visible">
+                <div
+                    class="lg:w-[1050px] bg-white flex items-center justify-evenly absolute top-[515px] shadow rounded-[8px] py-5">
+                    <!-- 1 -->
+                    <div>
+                        <img class="w-28" src="./images/fruit5.png" alt="">
+                        <h3 class="text-center text-lg font-medium mt-2">Pomegranate</h3>
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <img class="w-28" src="./images/fruit4.png" alt="">
+                        <h3 class="text-center text-lg font-medium mt-2">Strawberry</h3>
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <img class="w-28" src="./images/fruit3.png" alt="">
+                        <h3 class="text-center text-lg font-medium mt-2">Mango</h3>
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <img class="w-28" src="./images/fruit2.png" alt="">
+                        <h3 class="text-center text-lg font-medium mt-2">Orange</h3>
+                    </div>
+                    <!-- 5 -->
+                    <div>
+                        <img class="w-28" src="./images/fruit1.png" alt="">
+                        <h3 class="text-center text-lg font-medium mt-2">Grape</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <!-- head section end -->
     <!-- main section -->
-    <main class="">
-
+    <main class="max-w-screen-xl mx-auto px-5 lg:px-0">
+        <!-- deal of the day section -->
+        <div class="mt-10 lg:mt-48">
+            <!-- deal title -->
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
+                <!-- deal left -->
+                <div class="flex-1">
+                    <h1 class="text-4xl lg:text-5xl text-center lg:text-start text-secondary font-extrabold mb-4">Deal
+                        of the day</h1>
+                    <p class="text-base text-third font-medium">Contrary to popular belief, is not simply random text.
+                        It has roots in a piece of classical <br> Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- deal right -->
+                <div class="flex-1 flex items-center justify-end space-x-5">
+                    <!-- 1 -->
+                    <div>
+                        <h1 class="font-extrabold text-secondary text-5xl mb-4">29 :</h1>
+                        <p class="text-base text-third font-medium text-center">Days</p>
+                    </div>
+                    <!--  -->
+                    <div>
+                        <h1 class="font-extrabold text-secondary text-5xl mb-4">15 :</h1>
+                        <p class="text-base text-third font-medium text-center">Hours</p>
+                    </div>
+                    <!-- 1 -->
+                    <div>
+                        <h1 class="font-extrabold text-secondary text-5xl mb-4">25 :</h1>
+                        <p class="text-base text-third font-medium text-center">Minutes</p>
+                    </div>
+                    <!-- 1 -->
+                    <div>
+                        <h1 class="font-extrabold text-secondary text-5xl mb-4">08</h1>
+                        <p class="text-base text-third font-medium text-center">Seconds</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card section -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- card 1 -->
+                <div class="border rounded-lg p-5 flex items-center justify-center">
+                    <div class="space-y-5">
+                        <img src="./images/fruit7.png" alt="">
+                        <h2 class="text-center font-bold text-xl">12.90$ - 18.85$</h2>
+                        <span></span>
+                        <p class="text-center text-base text-third font-medium">Orange</p>
+                        <div class="flex items-center justify-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                            </div>
+                        </div>
+                        <!-- modal -->
+                        <div class="flex items-center justify-center">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-xl font-semibold text-primary"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <div class="flex justify-center">
+                                        <img class="w-56" src="./images/fruit7.png" alt="">
+                                    </div>
+                                    <h3 class="font-bold text-lg text-center">Orange</h3>
+                                    <p class="py-4 font-medium text-center">
+                                        Professional employees are there for youto
+                                        pick the most <br>
+                                        amazing and fresh fruits.
+                                    </p>
+                                    <div class="flex items-center justify-center pb-4">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                                        <div>
+                                            <button class="btn bg-white text-primary border-primary">Close</button>
+                                            <button
+                                                class="btn bg-primary hover:text-primary hover:border-primary text-white">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="dialog" class="modal-backdrop">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="border rounded-lg p-5 flex items-center justify-center">
+                    <div class="space-y-5">
+                        <img src="./images/fruit6.png" alt="">
+                        <h2 class="text-center font-bold text-xl">12.90$ - 18.85$</h2>
+                        <span></span>
+                        <p class="text-center text-base text-third font-medium">Apples</p>
+                        <div class="flex items-center justify-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                            </div>
+                        </div>
+                        <!-- modal -->
+                        <div class="flex items-center justify-center">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-xl font-semibold text-primary"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <div class="flex justify-center">
+                                        <img class="w-56" src="./images/fruit7.png" alt="">
+                                    </div>
+                                    <h3 class="font-bold text-lg text-center">Orange</h3>
+                                    <p class="py-4 font-medium text-center">
+                                        Professional employees are there for youto
+                                        pick the most <br>
+                                        amazing and fresh fruits.
+                                    </p>
+                                    <div class="flex items-center justify-center pb-4">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                                        <div>
+                                            <button class="btn bg-white text-primary border-primary">Close</button>
+                                            <button
+                                                class="btn bg-primary hover:text-primary hover:border-primary text-white">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="dialog" class="modal-backdrop">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="border rounded-lg p-5 flex items-center justify-center">
+                    <div class="space-y-5">
+                        <img src="./images/fruit8.png" alt="">
+                        <h2 class="text-center font-bold text-xl">12.90$ - 18.85$</h2>
+                        <span></span>
+                        <p class="text-center text-base text-third font-medium">Red Dragon</p>
+                        <div class="flex items-center justify-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                            </div>
+                        </div>
+                        <!-- modal -->
+                        <div class="flex items-center justify-center">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-xl font-semibold text-primary"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <div class="flex justify-center">
+                                        <img class="w-56" src="./images/fruit7.png" alt="">
+                                    </div>
+                                    <h3 class="font-bold text-lg text-center">Orange</h3>
+                                    <p class="py-4 font-medium text-center">
+                                        Professional employees are there for youto
+                                        pick the most <br>
+                                        amazing and fresh fruits.
+                                    </p>
+                                    <div class="flex items-center justify-center pb-4">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                                        <div>
+                                            <button class="btn bg-white text-primary border-primary">Close</button>
+                                            <button
+                                                class="btn bg-primary hover:text-primary hover:border-primary text-white">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="dialog" class="modal-backdrop">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="border rounded-lg p-5 flex items-center justify-center">
+                    <div class="space-y-5">
+                        <img src="./images/fruit9.png" alt="">
+                        <h2 class="text-center font-bold text-xl">12.90$ - 18.85$</h2>
+                        <span></span>
+                        <p class="text-center text-base text-third font-medium">Banana</p>
+                        <div class="flex items-center justify-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                            </div>
+                        </div>
+                        <!-- modal -->
+                        <div class="flex items-center justify-center">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-xl font-semibold text-primary"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <div class="flex justify-center">
+                                        <img class="w-56" src="./images/fruit7.png" alt="">
+                                    </div>
+                                    <h3 class="font-bold text-lg text-center">Orange</h3>
+                                    <p class="py-4 font-medium text-center">
+                                        Professional employees are there for youto
+                                        pick the most <br>
+                                        amazing and fresh fruits.
+                                    </p>
+                                    <div class="flex items-center justify-center pb-4">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" />
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center mt-4">
+                                        <div>
+                                            <button class="btn bg-white text-primary border-primary">Close</button>
+                                            <button
+                                                class="btn bg-primary hover:text-primary hover:border-primary text-white">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="dialog" class="modal-backdrop">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-5">
+                <button class="btn bg-primary hover:text-primary hover:border-primary text-white">
+                    Show all
+                </button>
+            </div>
+        </div>
     </main>
-    <!-- main section end -->
     <!-- footer section -->
     <footer>
 
     </footer>
-    <!-- footer section end -->
 </body>
 
 </html>
